@@ -1,0 +1,119 @@
+.navbar {
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    height: 72px;
+    background: var(--text-4);
+}
+
+
+@media screen and (max-width:991px) {
+    .navbar {
+        height: auto;
+
+    }
+
+    .navbar-toggler {
+        display: flex;
+        justify-content: end;
+        width: 100%;
+    }
+
+    .nav-item {
+        margin-top: 10px !important;
+    }
+
+    .navbar-toggler:focus,
+    .navbar-toggler:active,
+    .navbar-toggler-icon:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    .navbar-collapse {
+        width: 100%;
+    }
+
+    .navbar-nav div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdown .dropdown-menu {
+        display: none;
+
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 0px 25px;
+    cursor: pointer;
+}
+
+.logo {
+    height: 25px;
+}
+
+.arrow {
+    height: 7.4px;
+    width: 11px;
+    margin-left: 9px;
+    margin-top: -1px;
+}
+
+.input-field {
+    background-color: transparent;
+    background-image: url('../../asset/search.png');
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    border: none;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    left: 3px;
+    top: 3px;
+    border-radius: 0px;
+    position: relative;
+    transition: all 1s;
+}
+
+.input-field:focus {
+    border: 2px solid #363636;
+    padding: 15px 30px;
+    margin-left: -25px;
+    cursor: text;
+    outline: 0;
+    width: 200px;
+    color: var(--color-black);
+}
+
+.navbar .join-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 42px;
+    gap: 10px;
+    width: 166px;
+    height: 40px;
+    background: linear-gradient(266.79deg, #0048FF 4.63%, #0096FF 100%);
+    border-radius: 52px;
+    border: none;
+    color: var(--text-4);
+    font-weight: 600;
+    font-size: 15px;
+}

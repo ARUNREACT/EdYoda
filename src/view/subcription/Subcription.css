@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap');
+
+:root {
+  --color-black: #000000;
+
+  /* *******  TEXT   ******** */
+  --text-1: #d9d9d9;
+  --text-2: #3C4852;
+  --text-3: #BEBEBE;
+  --text-4: #FFFFFF;
+
+  /* *******  ALERT!!!   ******** */
+  --Alert-Text: #DE4313;
+  --Disabled: #E7E7E7;
+
+  /* *******  SUCCESS && DANGER   ******** */
+  --success1: #47BA68;
+  --success2: #D7EDDD;
+  --danger1: #F77171;
+  --danger2: #FF0000;
+
+  /* *******  PRIMARY   ******** */
+  --primary1: #47BA68;
+  --primary2: #0096FF;
+}
+
+
+
+/* ***********  MAIN-BACK-IMAGE  *********** */
+.main-content {
+  position: relative;
+  z-index: 1;
+}
+
+.content-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../../asset/Back\ Ground.png);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+/* ***********  MAIN-BACK-IMAGE  *********** */
+
+/* ***********  MAIN-LEFT-SIDE-CONTENT  *********** */
+.aboutplan img {
+  width: 48.46px;
+  height: 48.8px;
+  margin-right: 30px;
+}
+
+.aboutplan div p {
+  height: 48.8px;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: calc(.8rem + .7vw);
+  letter-spacing: 0.03em;
+  margin-left: 5px;
+}
+
+.aboutplan div p:nth-child(1),
+.aboutplan div p:nth-child(3) {
+  font-size: calc(.8rem + .7vw);
+  color: #0096FF;
+}
+
+.content-left p, .content-left div {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-size: calc(1.3rem + 1.5vw);
+  line-height: 125%;
+  letter-spacing: -0.01em;
+  color: var(--text-4);
+}
+
+.content-left div .rupee1, .rupee2 {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: calc(1.5rem + 1.7vw);
+  letter-spacing: -0.01em;
+  color: var(--text-4);
+}
+
+.content-left div .rupee1 {
+  font-size: calc(1.4rem + 1.1vw);
+}
+
+.content-left div .rupee2:nth-child(2) {
+  text-decoration-line: line-through;
+  text-decoration-color: var(--danger2);
+  margin: 5px;
+}
+
+.content-left div .rupee1:nth-child(4), .rupee2:nth-child(5) {
+  color: var(--primary2);
+}
+
+.content-left .aboutplan:nth-child(6) div p {
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+/* ***********  MAIN-LEFT-SIDE-CONTENT  *********** */
+
+/* ***********  MAIN-RIGHT-SIDE-CONTENT  *********** */
+
+/* *********** TOP-NUMBER  *********** */
+.top-number {
+  display: flex;
+  justify-content: space-around;
+  font-family: 'roboto';
+  text-align: center;
+}
+
+.top-number div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-number div p {
+  font-size: 15px;
+  margin-top: 3px;
+  color: var(--text-2);
+}
+
+.top-number .number {
+  background-color: var(--primary2);
+  color: var(--text-4);
+  font-weight: 600;
+  height: 30px;
+  width: 30px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.subcribe-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  text-align: center;
+}
+
+/* *********** SUBSCRIPTION-FEE  *********** */
+.plan-price {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 16px;
+  height: 65px;
+  border: 2px solid var(--text-3);
+  border-radius: 4px;
+  font-family: 'roboto';
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.plan-price .check-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  width: 28px;
+  border-radius: 100px;
+  border: 1px solid var(--text-3);
+}
+
+.plan-price .check-mark img {
+  height: 21px;
+  width: 21px;
+  border-radius: 100px;
+  visibility: hidden;
+}
+
+.plan-price.selected .check-mark img {
+  visibility: visible;
+}
+
+.selected {
+  background-color: var(--success2);
+  border: 2px solid var(--success1);
+}
+
+.parent-price-plan {
+  background-color: var(--text-4);
+  padding: 32px 24px;
+  border-radius: 8px;
+}
+
+.parent-price-plan .plan-price:nth-child(3) {
+  background-color: var(--Disabled);
+  color: var(--text-3);
+  border: 2px solid var(--text-3);
+}
+
+.parent-price-plan .plan-price:nth-child(3) .header-text {
+  background-color: var(--danger1);
+  color: var(--text-4);
+}
+
+.parent-price-plan .plan-price:nth-child(3) .check-mark img {
+  height: 17px;
+  width: 17px;
+  margin-left: .7px;
+}
+
+.parent-price-plan .plan-price:nth-child(3) .total-1,
+.parent-price-plan .plan-price:nth-child(3) span {
+  color: var(--text-3);
+
+}
+
+/* *********** INSIDE-TOP-TEXT  *********** */
+.header-text {
+  width: 121px;
+  height: 17px;
+  margin-left: 35px;
+  margin-bottom: 5px;
+  font-size: 12px;
+  text-align: center;
+  background: #47BA68;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.month-text {
+  font-size: 15px;
+  margin-left: 13px;
+}
+
+/* *********** INSDIE-RIGHT-END-TOTAL  *********** */
+.total-1, .total-2 {
+  margin: 0;
+  width: 80px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.total-1 {
+  font-size: 11px;
+  color: var(--text-2);
+}
+
+.total-1 span {
+  font-size: 15px;
+  margin: 0px 0px 0px 5px;
+  color: var(--color-black);
+}
+
+.total-2 {
+  font-size: 11px;
+  color: var(--text-3);
+}
+
+.total-2 span {
+  font-size: 15px;
+  margin: 0px 6px;
+  color: var(--color-black);
+}
+
+/* *********** SUBSCRIPTION-FEE  *********** */
+.fee p {
+  margin: 5px;
+}
+
+.fee p:nth-child(1) {
+  color: var(--text-2);
+
+}
+
+.fee, .offer div:nth-child(1), .offer div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 16px;
+  font-size: 15px;
+
+}
+
+/* *********** BOTTOM-OFFER  *********** */
+.offer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 65px;
+  border: 2px solid var(--danger1);
+  border-radius: 4px;
+  font-family: 'roboto';
+  background: linear-gradient(135deg, #de431333 0%, #de431333 0.75%, #de431333 2.92%, #de441433 6.37%, #df451533 10.97%, #df481633 16.59%, #e04b1833 23.1%, #e1501b33 30.37%, rgba(227, 86, 31, 0.2) 38.27%, rgba(229, 94, 36, 0.2) 46.66%, rgba(231, 104, 43, 0.2) 55.41%, rgba(235, 117, 51, 0.2) 64.39%, rgba(238, 132, 60, 0.2) 73.47%, rgba(243, 149, 71, 0.2) 82.52%, rgba(248, 169, 84, 0.2) 91.41%, rgba(254, 193, 99, 0.2) 100%);
+}
+
+.offer div:nth-child(2) {
+  justify-content: start;
+}
+
+.offer div:nth-child(1) p:nth-child(1) {
+  font-weight: 600;
+  color: var(--Alert-Text);
+}
+
+.offer div:nth-child(2) p {
+  font-size: 13.5px;
+  color: var(--Alert-Text);
+
+}
+
+.offer p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.offer img {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.overall-totall {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* *********** BUTTON  *********** */
+.payment-btn button {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 2px;
+  justify-content: center;
+  align-items: center;
+  width: 230.5px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  font-size: 14.5px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-family: 'roboto';
+}
+
+.payment-btn button:nth-child(1) {
+  border: 2px solid var(--danger1);
+  color: var(--danger1);
+}
+
+.payment-btn button:nth-child(2) {
+  background-color: var(--success1);
+  color: var(--text-4);
+}
+
+/* *********** RAZORPAY  *********** */
+.razorpay img {
+  margin-top: 15px;
+  width: 120px;
+  height: 42.69px;
+}
+
+/* ***********  MAIN-RIGHT-SIDE-CONTENT  *********** */
