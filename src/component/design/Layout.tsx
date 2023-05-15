@@ -1,5 +1,4 @@
-import '../component/Layout.css'
-// import '../view/subcription/App.css'
+import '../design/Layout.css'
 
 export function Aboutplan(props: any) {
   return (
