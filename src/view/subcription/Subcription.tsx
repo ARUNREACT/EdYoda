@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState } from 'react'
 import { Aboutplan, Plansprice } from '../../component/design/Layout'
 import { Header } from '../../component/header/Header'
