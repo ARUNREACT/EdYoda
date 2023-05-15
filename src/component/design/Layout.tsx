@@ -1,4 +1,5 @@
 import '../design/Layout.css'
+import React from 'react'
 
 export function Aboutplan(props: any) {
   return (
