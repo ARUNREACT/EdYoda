@@ -3,8 +3,8 @@ import '../design/Layout.css'
 export function Aboutplan(props: any) {
   return (
     <div className="d-flex aboutplan mt-3">
-      <div className="">
-        <img src={props.img} alt="" />
+      <div>
+        <img src={props.img} alt="courses" />
       </div>
       <div className="d-flex">
         <p>{props.span1}</p>
@@ -28,7 +28,7 @@ export function Plansprice(props: any) {
         </div>
         <div className="d-flex">
           <div className="check-mark">
-            <img src={props.img}></img>
+            <img src={props.img} alt="check-mark"></img>
           </div>
 
           <p className="month-text">{props.p}</p>

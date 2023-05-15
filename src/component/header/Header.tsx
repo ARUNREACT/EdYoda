@@ -31,6 +31,7 @@ export function Header() {
             </li>
             <li className="nav-item dropdown">
               <a
+                href="#edyoda"
                 className="nav-link dropdown-togle"
                 id="navbarDropdown"
                 data-toggle="dropdown"
@@ -43,16 +44,17 @@ export function Header() {
                 />
               </a>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a className="dropdown-item" href="#">
+                <a href="#edyoda" className="dropdown-item">
                   HTML
                 </a>
-                <a className="dropdown-item" href="#">
+                <a href="#edyoda" className="dropdown-item">
                   CSS
                 </a>
               </div>
             </li>
             <li className="nav-item dropdown">
               <a
+                href="#edyoda"
                 className="nav-link dropdown-togle"
                 id="navbarDropdownMenuLink"
                 data-toggle="dropdown"
@@ -68,10 +70,10 @@ export function Header() {
                 className="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <a className="dropdown-item" href="#">
+                <a href="#edyoda" className="dropdown-item">
                   AI Learning
                 </a>
-                <a className="dropdown-item" href="#">
+                <a href="#edyoda" className="dropdown-item">
                   WEB development
                 </a>
               </div>
@@ -82,7 +84,9 @@ export function Header() {
               <input className="input-field form-control" />
             </li>
             <li className="nav-item">
-              <a className="nav-link">Log in</a>
+              <a href="#edyoda" className="nav-link">
+                Log in
+              </a>
             </li>
             <li className="nav-item">
               <button className="bt join-btn">JOIN NOW</button>

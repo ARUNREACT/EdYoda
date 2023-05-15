@@ -7,8 +7,8 @@ export default function Subcription() {
   const [selectedDiv, setSelectedDiv] = useState<string | null>(null)
 
   const [selectedPlan, setSelectedPlan] = useState<string>('')
-  const [netPrice, setNetPrice] = useState<number>(0)
-  const [gstAmount, setGstAmount] = useState<number>(0)
+  const [, setNetPrice] = useState<number>(0)
+  const [gstAmount] = useState<number>(0)
   const [totalPrice, setTotalPrice] = useState<number>(0)
 
   const calculatePrices = (selectedPlan: string): void => {
