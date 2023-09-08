@@ -64,7 +64,7 @@ export default function Subcription() {
         <div className="d-flex justify-content-center flex-wrap col-12 p-1 col-xl-11 mx-auto main-content">
           {/* ************ LEFT-SIDE-CONTENT ************* */}
           <div className="col-12 col-sm-10 col-lg-7 p-1  p-md-5  content-left">
-            <p>Access curated courses rth</p>
+            <p>Access curated course</p>
             <div className="mb-5">
               <span className="rupee1">₹ </span>
               <span className="rupee2">18,500 </span>
